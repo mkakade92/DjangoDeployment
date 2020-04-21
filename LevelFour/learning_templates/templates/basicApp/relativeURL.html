@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends "basicApp/base.html" %}
+{% block body_block %}
+      <div class="jumbotron">
+        <h1>Welcome to Relative URL</h1>
+        <a href="{% url 'basicApp:other' %}">Click to go to other</a>
+        <a href="{% url 'admin:index' %}">Click To Visit Admin</a>
+        <a href="{% url 'index' %}">Go TO Index</a>
+      </div>
+{% endblock %}
